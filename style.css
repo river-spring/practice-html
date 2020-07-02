@@ -8,11 +8,15 @@
 	display: block;
 	clear: both;
 }
+a {
+	color: #fafafa;
+	text-decoration: none;
+}
 header {
 	background-color: #ec715f;
 	height: 70px;
 }
-.header-content {
+.container {
 	width: 1024px;
 	margin:0 auto;
 }
@@ -31,6 +35,9 @@ header {
 	font-size: 16px;
 	color: #fafafa;
 }
+.menu-box {
+	display: none;
+}
 .main-visual {
 	background-image: url(img/mv.png);
 	background-size: 100%;
@@ -46,26 +53,26 @@ header {
 .main-visual p {
 	font-size: 20px;
 }
-.portfolio {
+#portfolio {
 	background-color: #eceff1;
 	text-align: center;
 	color: #000000;
 	padding-bottom: 90px;
 }
-.portfolio h2 {
+#portfolio h2 {
 	font-size: 32px;
 	padding-top: 90px;
 	padding-bottom: 8px;
 }
-.portfolio h2::after {
+#portfolio h2::after {
 	content: "";
 	display: block;
-	width: 60px;
+	width: 70px;
 	height: 3px;
 	background-color: #ec715f;
 	margin:0 auto;
 }
-.portfolio p {
+#portfolio p {
 	font-size: 16px;
 	padding: 30px 0;
 }
@@ -105,20 +112,21 @@ header {
 	background-image: url(img/webcamp-mother.png);
 }
 
-.feature {
+#feature {
 	width: 980px;
 	padding: 90px 0;
 	margin: 0 auto;
 	color: #000000;
 }
-.feature h2{
+#feature h2{
 	text-align: center;
 	font-size: 32px;
+	padding-bottom: 8px;
 }
-.feature h2::after {
+#feature h2::after {
 	content: "";
 	display: block;
-	width: 60px;
+	width: 70px;
 	height: 3px;
 	background-color: #ec715f;
 	margin:0 auto;
@@ -163,7 +171,7 @@ header {
 .plofile h2::after {
 	content: "";
 	display: block;
-	width: 60px;
+	width: 70px;
 	height: 3px;
 	background-color: #ec715f;
 	margin:0 auto;
@@ -207,10 +215,10 @@ header {
 	padding-bottom: 8px;
 	text-align: center;
 }
-.cintact h2::after {
+.contact h2::after {
 	content: "";
 	display: block;
-	width: 60px;
+	width: 70px;
 	height: 3px;
 	background-color: #ec715f;
 	margin:0 auto;
@@ -222,5 +230,131 @@ header {
 }
 .contact-box {
 	width: 50%;
+	float: left;
+	margin: 0 auto;
 }
-.contact-box
+.contact-box h3 {
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+.mail{
+	padding-bottom: 20px;
+}
+.btn {
+	font-size: 50px;
+}
+.twt {
+	padding: 0 20px;
+}
+footer {
+	background-color: #ec715f;
+	height: 60px;
+}
+.footer-logo {
+	font-size: 16px;
+	color: #fafafa;
+	text-align: center;
+	line-height: 60px;
+}
+@media screen and (max-width:767px) {
+	header {
+		height: 50px;
+		width: 100%;
+	}
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.header-logo {
+		height: 50px;
+	}
+	.menu-box {
+		display: block;
+		border: 1px solid #fafafa;
+		height: 40px;
+		width: 40px;
+		float: right;
+		margin: 5px 0;
+	}
+	.list-ber:first-child {
+		margin-top: 10px;
+	}
+	.list-ber {
+		display: block;
+		width: 25px;
+		height: 2px;
+		margin: 5px auto;
+		background-color: #fafafa;
+	}
+	.list-ber:last-child {
+		margin-bottom: 10px;
+	}
+	.nav {
+		display: none;
+	}
+	.main-visual {
+	background-image: url(img/code.png);
+	background-size: cover;
+	background-position: center;
+	height: 650px;
+	color: #fafafa;
+	text-align: center;
+	}
+	.main-visual h1 {
+		font-size: 40px;
+		padding-top: 200px;
+		padding-bottom: 10px;
+	}
+	.main-visual p {
+		font-size: 18px;
+	}
+	#portfolio {
+		width: 100%;
+	}
+	#portfolio h2 {
+		font-size: 32px;
+		padding-bottom: 8px;
+	}
+	#portfolio p {
+		width: 90%;
+		margin: 0 auto;
+		font-size: 16px;
+	}
+	.portfolio-box {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.box {
+		float: none;
+		margin: 0 auto;
+	}
+	.portfolio1 {
+		display: none;
+	}
+	.portfolio2 {
+		margin: 0 auto;
+	}
+	.portfolio3 {
+		display: none;
+	}
+	.portfolio4 {
+		margin: 10px auto;
+	}
+	.portfolio5 {
+		display: none;
+	}
+	#feature {
+		width: 90%;
+	}
+	.strength {
+	width: 90%;
+	margin: 0 auto;
+	float: none;
+	text-align: center;
+	}
+	.strength2 {
+		margin: 10px auto;
+	}
+	
+
+}

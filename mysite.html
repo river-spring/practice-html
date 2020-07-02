@@ -3,16 +3,24 @@
 <head>
 	<meta charset="UTF=8">
 	<script src="https://kit.fontawesome.com/ef13adf5d5.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 	<title>MySite</title>
 </head>
 <header>
-<div class="header-content">
+<div class="container clearfix">
 	<img src="img/logo.png" class="header-logo">
+
+<div class="menu-box">
+	<span class="list-ber"></span>
+	<span class="list-ber"></span>
+	<span class="list-ber"></span>
+</div>
+
 	<nav class="nav">
 		<ul>
-			<li>Portfolio</li>
-			<li>Feature</li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#feature">Feature</a></li>
 			<li>Profile</li>
 			<li>Contact</li>
 		</ul>
@@ -24,7 +32,7 @@
 		<h1>Lorem Ipsum</h1>
 		<p>simply dummy text of the printing</p>
 	</section>
-	<section class="portfolio">
+	<section id="portfolio">
 		<h2 >Portfolio</h2>
 		<p>It is a long established fact that a reader will be distracted by the readable<br>content of a page when looking at its layout.<br>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
 		<div class="portfolio-box clearfix">
@@ -36,7 +44,7 @@
 			<div class="box portfolio6"></div>
 		</div>
 	</section>
-	<section class="feature clearfix">
+	<section class="clearfix" id="feature">
 		<h2>Feature</h2>
 		<p class="feature-text">
 				It is a long established fact that a reader will be distracted by the readable<br>content of a page when looking at its layout.<br>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
@@ -83,16 +91,19 @@
 			<p class="contact-text">It is a long established fact that a reader will be distracted by the readable<br>content of a page when looking at its layout.<br>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
 			<div class="contact-box">
 				<h3>Mail</h3>
-				<p>xxx@xxx.com</p>
+				<p class="mail">xxx@xxx.com</p>
 				<h3>Tel</h3>
 				<p>000-0000-0000</p>
 		    </div>
 		    <div class="contact-box">
-				<h3 class="sns">SNS</h3>
-				<i class="fab fa-twitter"></i>
-				<i class="fab fa-facebook-f"></i>
-				<i class="fab fa-instagram-square"></i>
+				<h3>SNS</h3>
+				<i class="fab fa-facebook-f btn"></i>
+				<i class="fab fa-twitter twt btn"></i>
+				<i class="fab fa-instagram-square btn"></i>
 			</div>
 		</section>
+		<footer>
+				<p class="footer-logo">©2017 WebCanp</p>
+			</footer>
 </main>
 </html>
