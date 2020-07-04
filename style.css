@@ -355,6 +355,35 @@ footer {
 	.strength2 {
 		margin: 10px auto;
 	}
-	
+	.plofile-box {
+		width: 90%;
+	}
+	.plf {
+		width: 100%;
+		float: none;
+	}
+	.myplofile {
+		text-align: center;
+	}
+	.myplofile-title {
+		padding-top: 20px;
+	}
+	.myskills {
+		padding-top: 20px;
+	}
+	.contact {
+		width: 90%;
+	}
+	.contact-box {
+		width: 90%;
+		float: none;
+		text-align: center;
+	}
+	.contact-box:first-child {
+		padding-bottom: 20px;
+	}
+	.twt {
+		padding: 0 8px;
+	}
 
 }
